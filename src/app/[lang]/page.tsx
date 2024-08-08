@@ -67,16 +67,6 @@ import { getDictionary } from "../dictionaries";
 
 
 
-/*
-const client = createThirdwebClient({
-  clientId: process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID || "",
-});
-*/
-
-
-
-
-
 const wallets = [
   inAppWallet({
     auth: {
