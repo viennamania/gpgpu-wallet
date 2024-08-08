@@ -80,7 +80,7 @@ export async function insertSellOrder(data: any) {
 
   // get user mobile number by wallet address
 
-  const userCollection = client.db('vienna').collection('users');
+  const userCollection = client.db('gpgpu').collection('users');
 
 
   const user = await userCollection.findOne<UserProps>(
@@ -106,7 +106,7 @@ export async function insertSellOrder(data: any) {
 
 
 
-  const collection = client.db('vienna').collection('orders');
+  const collection = client.db('gpgpu').collection('orders');
 
  
   const result = await collection.insertOne(
@@ -146,7 +146,7 @@ export async function insertSellOrder(data: any) {
 export async function getOrderById(orderId: string): Promise<UserProps | null> {
 
   const client = await clientPromise;
-  const collection = client.db('vienna').collection('orders');
+  const collection = client.db('gpgpu').collection('orders');
 
   const result = await collection.findOne<UserProps>(
     { _id: new ObjectId(orderId) }
@@ -166,7 +166,7 @@ export async function getOrderById(orderId: string): Promise<UserProps | null> {
 export async function getOpenOrdersCount(): Promise<number> {
 
   const client = await clientPromise;
-  const collection = client.db('vienna').collection('orders');
+  const collection = client.db('gpgpu').collection('orders');
 
   const result = await collection.countDocuments(
     { status: 'ordered', createdAt: { $gt: new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString() } }
@@ -202,7 +202,7 @@ export async function getSellOrders(
 ): Promise<ResultProps> {
 
   const client = await clientPromise;
-  const collection = client.db('vienna').collection('orders');
+  const collection = client.db('gpgpu').collection('orders');
 
 
   // status is not 'paymentConfirmed'
@@ -272,7 +272,7 @@ export async function getOneSellOrder(
 ): Promise<ResultProps> {
 
   const client = await clientPromise;
-  const collection = client.db('vienna').collection('orders');
+  const collection = client.db('gpgpu').collection('orders');
 
 
   // status is not 'paymentConfirmed'
@@ -334,7 +334,7 @@ export async function deleteSellOrder(
 ): Promise<boolean> {
 
   const client = await clientPromise;
-  const collection = client.db('vienna').collection('orders');
+  const collection = client.db('gpgpu').collection('orders');
 
   // check orderId is valid ObjectId
   if (!ObjectId.isValid(orderId)) {
@@ -379,7 +379,7 @@ export async function cancelTradeByBuyer(
 ) {
 
   const client = await clientPromise;
-  const collection = client.db('vienna').collection('orders');
+  const collection = client.db('gpgpu').collection('orders');
 
   // check orderId is valid ObjectId
   if (!ObjectId.isValid(orderId)) {
@@ -430,7 +430,7 @@ export async function cancelTradeByBuyer(
 export async function cancelTradeByAdmin() {
 
   const client = await clientPromise;
-  const collection = client.db('vienna').collection('orders');
+  const collection = client.db('gpgpu').collection('orders');
 
   // status is 'accepted'
   // acceptedAt is more than 1 hour ago
@@ -473,7 +473,7 @@ export async function getSellOrdersForBuyer(
 ): Promise<ResultProps> {
 
   const client = await clientPromise;
-  const collection = client.db('vienna').collection('orders');
+  const collection = client.db('gpgpu').collection('orders');
 
 
   // status is not 'paymentConfirmed'
@@ -547,7 +547,7 @@ export async function getSellOrdersByWalletAddress(
 ): Promise<ResultProps> {
 
   const client = await clientPromise;
-  const collection = client.db('vienna').collection('orders');
+  const collection = client.db('gpgpu').collection('orders');
 
 
   const results = await collection.find<UserProps>(
@@ -589,7 +589,7 @@ export async function acceptSellOrder(data: any) {
 
 
   const client = await clientPromise;
-  const collection = client.db('vienna').collection('orders');
+  const collection = client.db('gpgpu').collection('orders');
 
   // random number for tradeId
   // 100000 ~ 999999 string
@@ -711,7 +711,7 @@ export async function requestPayment(data: any) {
 
 
   const client = await clientPromise;
-  const collection = client.db('vienna').collection('orders');
+  const collection = client.db('gpgpu').collection('orders');
 
 
   const result = await collection.updateOne(
@@ -758,7 +758,7 @@ export async function confirmPayment(data: any) {
 
 
   const client = await clientPromise;
-  const collection = client.db('vienna').collection('orders');
+  const collection = client.db('gpgpu').collection('orders');
 
 
   const result = await collection.updateOne(
@@ -809,7 +809,7 @@ export async function getTradesByWalletAddress(
 
 
   const client = await clientPromise;
-  const collection = client.db('vienna').collection('orders');
+  const collection = client.db('gpgpu').collection('orders');
 
 
   // get orders by buyer.walletAddress = walletAddress 
@@ -856,7 +856,7 @@ export async function getTradesByWalletAddressProcessing(
 
 
   const client = await clientPromise;
-  const collection = client.db('vienna').collection('orders');
+  const collection = client.db('gpgpu').collection('orders');
 
 
   // get orders by buyer.walletAddress = walletAddress 
@@ -905,7 +905,7 @@ export async function getSellTradesByWalletAddress(
 
 
   const client = await clientPromise;
-  const collection = client.db('vienna').collection('orders');
+  const collection = client.db('gpgpu').collection('orders');
 
 
   // get orders by buyer.walletAddress = walletAddress 
@@ -948,7 +948,7 @@ export async function getSellTradesByWalletAddressProcessing(
 
 
   const client = await clientPromise;
-  const collection = client.db('vienna').collection('orders');
+  const collection = client.db('gpgpu').collection('orders');
 
 
   // get orders by buyer.walletAddress = walletAddress 
@@ -988,7 +988,7 @@ export async function getPaymentRequestedUsdtAmountByWalletAddress(
 ): Promise<any> {
 
   const client = await clientPromise;
-  const collection = client.db('vienna').collection('orders');
+  const collection = client.db('gpgpu').collection('orders');
 
   const results = await collection.aggregate([
     {
@@ -1023,7 +1023,7 @@ export async function getPaymentRequestedUsdtAmountByWalletAddress(
 
 export async function updateOne(data: any) {
   const client = await clientPromise;
-  const collection = client.db('vienna').collection('users');
+  const collection = client.db('gpgpu').collection('users');
 
 
   // update and return updated user
@@ -1060,7 +1060,7 @@ export async function getOneByWalletAddress(
   console.log('getOneByWalletAddress walletAddress: ' + walletAddress);
 
   const client = await clientPromise;
-  const collection = client.db('vienna').collection('users');
+  const collection = client.db('gpgpu').collection('users');
 
 
   // id is number

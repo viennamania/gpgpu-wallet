@@ -53,7 +53,7 @@ export async function insertOne(data: any) {
 
 
   const client = await clientPromise;
-  const collection = client.db('vienna').collection('users');
+  const collection = client.db('gpgpu').collection('users');
 
   // check same walletAddress or smae nickname
 
@@ -126,7 +126,7 @@ export async function insertOneVerified(data: any) {
 
 
   const client = await clientPromise;
-  const collection = client.db('vienna').collection('users');
+  const collection = client.db('gpgpu').collection('users');
 
   // check same walletAddress or smae nickname
 
@@ -201,7 +201,7 @@ export async function updateOne(data: any) {
 
 
   const client = await clientPromise;
-  const collection = client.db('vienna').collection('users');
+  const collection = client.db('gpgpu').collection('users');
 
 
   // update and return updated user
@@ -242,7 +242,7 @@ export async function updateOne(data: any) {
 
 export async function updateAvatar(data: any) {
   const client = await clientPromise;
-  const collection = client.db('vienna').collection('users');
+  const collection = client.db('gpgpu').collection('users');
 
 
   // update and return updated user
@@ -275,7 +275,7 @@ export async function updateAvatar(data: any) {
 
 export async function updateSellerStatus(data: any) {
   const client = await clientPromise;
-  const collection = client.db('vienna').collection('users');
+  const collection = client.db('gpgpu').collection('users');
 
 
   // update and return updated user
@@ -323,7 +323,7 @@ export async function getOneByWalletAddress(
   //console.log('getOneByWalletAddress walletAddress: ' + walletAddress);
 
   const client = await clientPromise;
-  const collection = client.db('vienna').collection('users');
+  const collection = client.db('gpgpu').collection('users');
 
 
   // id is number
@@ -355,7 +355,7 @@ export async function getAllUsers(
 
 
   const client = await clientPromise;
-  const collection = client.db('vienna').collection('users');
+  const collection = client.db('gpgpu').collection('users');
 
 
   console.log('limit: ' + limit);
@@ -412,7 +412,7 @@ export async function getBestSellers(
 
 
   const client = await clientPromise;
-  const collection = client.db('vienna').collection('users');
+  const collection = client.db('gpgpu').collection('users');
 
 
   console.log('limit: ' + limit);
