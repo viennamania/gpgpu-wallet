@@ -587,7 +587,7 @@ export default function Index({ params }: any) {
             client={client}
             appMetadata={{
               name: "Next App",
-              url: "https://goodtether.com",
+              url: "https://gpgpuwallet.vercel.app",
             }}
           />
           */}
@@ -1113,7 +1113,7 @@ export default function Index({ params }: any) {
                 {
                   logoUrl: "https://gpgpuwallet.vercel.app/logo-gpgpu.png",
                   name: "Next App",
-                  url: "https://goodtether.com",
+                  url: "https://gpgpuwallet.vercel.app",
                   description: "This is a Next App.",
 
                 }

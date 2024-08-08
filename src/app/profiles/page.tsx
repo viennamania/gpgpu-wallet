@@ -400,7 +400,7 @@ export default function SettingsPage() {
                                 {
                                     logoUrl: "https://gpgpuwallet.vercel.app/logo-gpgpu.png",
                                     name: "Next App",
-                                    url: "https://goodtether.com",
+                                    url: "https://gpgpuwallet.vercel.app",
                                     description: "This is a Next App.",
 
                                 }

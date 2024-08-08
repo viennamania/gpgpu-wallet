@@ -1244,7 +1244,7 @@ export default function Index({ params }: any) {
                             {
                               logoUrl: "https://gpgpuwallet.vercel.app/logo-gpgpu.png",
                               name: "Next App",
-                              url: "https://goodtether.com",
+                              url: "https://gpgpuwallet.vercel.app",
                               description: "This is a Next App.",
 
                             }
@@ -1287,7 +1287,7 @@ export default function Index({ params }: any) {
                               {
                                 logoUrl: "https://gpgpuwallet.vercel.app/logo-gpgpu.png",
                                 name: "Next App",
-                                url: "https://goodtether.com",
+                                url: "https://gpgpuwallet.vercel.app",
                                 description: "This is a Next App.",
 
                               }
@@ -2645,7 +2645,7 @@ export default function Index({ params }: any) {
                                       ////router.push(`/sell-usdt/${item._id}`);
 
                                       // copy to clipboard
-                                      navigator.clipboard.writeText(`https://goodtether.com/${params.lang}/${params.chain}/sell-usdt/${item._id}`);
+                                      navigator.clipboard.writeText(`https://gpgpuwallet.vercel.app/${params.lang}/${params.chain}/sell-usdt/${item._id}`);
                                       toast.success('Link has been copied to clipboard');
 
                                     }}

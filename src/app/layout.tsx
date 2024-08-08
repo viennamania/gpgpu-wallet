@@ -19,7 +19,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 /*
 export const metadata: Metadata = {
-  title: "GoodTether",
+  title: "GPGPU Wallet",
   description:
     "Starter for  WEB3 Wallet.",
 };
@@ -75,7 +75,7 @@ export default function RootLayout({
 
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>GoodTether</title>
+        <title>GPGPU Wallet</title>
         <meta name="description" content="Starter for  WEB3 Wallet." />
         <link rel="icon" href="/favicon.ico" />
 

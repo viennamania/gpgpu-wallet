@@ -591,12 +591,11 @@ export default function Index({ params }: any) {
         <div className="w-full flex flex-col justify-between items-center gap-2 mb-5">
 
 
-          {/* logo image  goodtether_logo.png */}
 
           <div className="flex flex-row justify-center items-center gap-2">
             <Image
-              src="/goodtether_logo.png"
-              alt="GoodTether"
+              src="/logo-gpgpu.png"
+              alt="GPGPU Wallet"
               width={500}
               height={100}
             />
@@ -654,7 +653,7 @@ export default function Index({ params }: any) {
             client={client}
             appMetadata={{
               name: "Next App",
-              url: "https://goodtether.com",
+              url: "https://gpgpuwallet.vercel.app",
             }}
           />
           */}
@@ -1080,7 +1079,7 @@ export default function Index({ params }: any) {
                     {
                       logoUrl: "https://gpgpuwallet.vercel.app/logo-gpgpu.png",
                       name: "Next App",
-                      url: "https://goodtether.com",
+                      url: "https://gpgpuwallet.vercel.app",
                       description: "This is a Next App.",
 
                     }
@@ -1123,7 +1122,7 @@ export default function Index({ params }: any) {
                       {
                         logoUrl: "https://gpgpuwallet.vercel.app/logo-gpgpu.png",
                         name: "Next App",
-                        url: "https://goodtether.com",
+                        url: "https://gpgpuwallet.vercel.app",
                         description: "This is a Next App.",
   
                       }

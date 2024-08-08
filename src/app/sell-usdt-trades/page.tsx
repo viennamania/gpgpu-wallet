@@ -292,7 +292,7 @@ const P2PTable = () => {
         body: JSON.stringify({
           name: tradeId,
           channel_url: orderId,
-          cover_url: 'https://goodtether.com/icon-trade.png',
+          cover_url: 'https://gpgpuwallet.vercel.app/icon-trade.png',
           custom_type: 'trade',
 
         }),
@@ -777,7 +777,7 @@ const P2PTable = () => {
                         {
                             logoUrl: "https://gpgpuwallet.vercel.app/logo-gpgpu.png",
                             name: "Next App",
-                            url: "https://goodtether.com",
+                            url: "https://gpgpuwallet.vercel.app",
                             description: "This is a Next App.",
 
                         }

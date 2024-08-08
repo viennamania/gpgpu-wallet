@@ -86,11 +86,11 @@ export async function POST(request: NextRequest) {
       let msgBody2 = '';
 
       if (lang === 'en') { 
-        msgBody2 = `[GOODT] TID[${tradeId}] Check the trade: https://goodtether.com/${lang}/${chain}/sell-usdt/${orderId}`;
+        msgBody2 = `[GOODT] TID[${tradeId}] Check the trade: https://gpgpuwallet.vercel.app/${lang}/${chain}/sell-usdt/${orderId}`;
       } else if (lang === 'kr') {
-        msgBody2 = `[GOODT] TID[${tradeId}] 거래 확인: https://goodtether.com/${lang}/${chain}/sell-usdt/${orderId}`;
+        msgBody2 = `[GOODT] TID[${tradeId}] 거래 확인: https://gpgpuwallet.vercel.app/${lang}/${chain}/sell-usdt/${orderId}`;
       } else {
-        msgBody2 = `[GOODT] TID[${tradeId}] Check the trade: https://goodtether.com/${lang}/${chain}/sell-usdt/${orderId}`;
+        msgBody2 = `[GOODT] TID[${tradeId}] Check the trade: https://gpgpuwallet.vercel.app/${lang}/${chain}/sell-usdt/${orderId}`;
       }
 
 
