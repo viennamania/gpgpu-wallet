@@ -1111,7 +1111,7 @@ export default function Index({ params }: any) {
               
               appMetadata={
                 {
-                  logoUrl: "https://goodtether.com/goodtether_logo.png",
+                  logoUrl: "https://gpgpuwallet.vercel.app/logo-gpgpu.png",
                   name: "Next App",
                   url: "https://goodtether.com",
                   description: "This is a Next App.",
