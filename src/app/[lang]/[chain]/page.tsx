@@ -596,7 +596,7 @@ export default function Index({ params }: any) {
             <Image
               src="/logo-gpgpu.png"
               alt="GPGPU Wallet"
-              width={500}
+              width={100}
               height={100}
             />
           </div>
