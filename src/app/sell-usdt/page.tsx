@@ -534,9 +534,9 @@ const P2PTable = () => {
                             
                             appMetadata={
                             {
-                                logoUrl: "https://gpgpuwallet.vercel.app/logo-gpgpu.png",
+                                logoUrl: "https://gpgpu-wallet.vercel.app/logo-gpgpu.png",
                                 name: "Next App",
-                                url: "https://gpgpuwallet.vercel.app",
+                                url: "https://gpgpu-wallet.vercel.app",
                                 description: "This is a Next App.",
 
                             }
@@ -1468,7 +1468,7 @@ const P2PTable = () => {
                                       ////router.push(`/sell-usdt/${item._id}`);
 
                                       // copy to clipboard
-                                      navigator.clipboard.writeText(`https://gpgpuwallet.vercel.app/en/sell-usdt/${item._id}`);
+                                      navigator.clipboard.writeText(`https://gpgpu-wallet.vercel.app/en/sell-usdt/${item._id}`);
                                       toast.success('Link has been copied to clipboard');
 
                                     }}

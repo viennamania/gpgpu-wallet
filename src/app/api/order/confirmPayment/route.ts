@@ -246,7 +246,7 @@ export async function POST(request: NextRequest) {
         try {
     
     
-          const msgBody = `[GOODT] TID[${tradeId}] You received ${amount} USDT from ${nickname}! https://gpgpuwallet.vercel.app/${lang}/${chain}/sell-usdt/${orderId}`;
+          const msgBody = `[GOODT] TID[${tradeId}] You received ${amount} USDT from ${nickname}! https://gpgpu-wallet.vercel.app/${lang}/${chain}/sell-usdt/${orderId}`;
       
           message = await client.messages.create({
             ///body: "This is the ship that made the Kessel Run in fourteen parsecs?",

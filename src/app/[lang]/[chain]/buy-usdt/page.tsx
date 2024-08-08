@@ -790,9 +790,9 @@ export default function Index({ params }: any) {
                           
                           appMetadata={
                             {
-                              logoUrl: "https://gpgpuwallet.vercel.app/logo-gpgpu.png",
+                              logoUrl: "https://gpgpu-wallet.vercel.app/logo-gpgpu.png",
                               name: "Next App",
-                              url: "https://gpgpuwallet.vercel.app",
+                              url: "https://gpgpu-wallet.vercel.app",
                               description: "This is a Next App.",
 
                             }
@@ -833,9 +833,9 @@ export default function Index({ params }: any) {
 
                             appMetadata={
                               {
-                                logoUrl: "https://gpgpuwallet.vercel.app/logo-gpgpu.png",
+                                logoUrl: "https://gpgpu-wallet.vercel.app/logo-gpgpu.png",
                                 name: "Next App",
-                                url: "https://gpgpuwallet.vercel.app",
+                                url: "https://gpgpu-wallet.vercel.app",
                                 description: "This is a Next App.",
 
                               }
@@ -1381,7 +1381,7 @@ export default function Index({ params }: any) {
                                       className="text-sm bg-blue-500 text-white px-2 py-1 rounded-md hover:bg-blue-600"
                                       onClick={() => {
 
-                                        window.open(`https://gpgpuwallet.vercel.app/${params.lang}/sell-usdt/${item._id}`, '_blank');
+                                        window.open(`https://gpgpu-wallet.vercel.app/${params.lang}/sell-usdt/${item._id}`, '_blank');
 
                                       }}
                                     >
@@ -1515,11 +1515,11 @@ export default function Index({ params }: any) {
                                       className="ml-5 text-sm bg-blue-500 text-white px-2 py-1 rounded-md hover:bg-blue-600"
                                       onClick={() => {
 
-                                        //window.open(`https://gpgpuwallet.vercel.app/${params.lang}/${params.chain}/sell-usdt/${item._id}`, '_blank');
+                                        //window.open(`https://gpgpu-wallet.vercel.app/${params.lang}/${params.chain}/sell-usdt/${item._id}`, '_blank');
 
                                         // copy to clipboard
 
-                                        navigator.clipboard.writeText(`https://gpgpuwallet.vercel.app/${params.lang}/${params.chain}/sell-usdt/${item._id}`);
+                                        navigator.clipboard.writeText(`https://gpgpu-wallet.vercel.app/${params.lang}/${params.chain}/sell-usdt/${item._id}`);
 
                                         toast.success('Link copied to clipboard');
 

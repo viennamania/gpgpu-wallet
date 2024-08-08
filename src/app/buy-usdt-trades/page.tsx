@@ -259,7 +259,7 @@ const P2PTable = () => {
         body: JSON.stringify({
           name: tradeId,
           channel_url: orderId,
-          cover_url: 'https://gpgpuwallet.vercel.app/icon-trade.png',
+          cover_url: 'https://gpgpu-wallet.vercel.app/icon-trade.png',
           custom_type: 'trade',
 
         }),
@@ -448,9 +448,9 @@ const P2PTable = () => {
                             
                             appMetadata={
                             {
-                                logoUrl: "https://gpgpuwallet.vercel.app/logo-gpgpu.png",
+                                logoUrl: "https://gpgpu-wallet.vercel.app/logo-gpgpu.png",
                                 name: "Next App",
-                                url: "https://gpgpuwallet.vercel.app",
+                                url: "https://gpgpu-wallet.vercel.app",
                                 description: "This is a Next App.",
 
                             }

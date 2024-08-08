@@ -653,7 +653,7 @@ export default function Index({ params }: any) {
             client={client}
             appMetadata={{
               name: "Next App",
-              url: "https://gpgpuwallet.vercel.app",
+              url: "https://gpgpu-wallet.vercel.app",
             }}
           />
           */}
@@ -1077,9 +1077,9 @@ export default function Index({ params }: any) {
                   
                   appMetadata={
                     {
-                      logoUrl: "https://gpgpuwallet.vercel.app/logo-gpgpu.png",
+                      logoUrl: "https://gpgpu-wallet.vercel.app/logo-gpgpu.png",
                       name: "Next App",
-                      url: "https://gpgpuwallet.vercel.app",
+                      url: "https://gpgpu-wallet.vercel.app",
                       description: "This is a Next App.",
 
                     }
@@ -1120,9 +1120,9 @@ export default function Index({ params }: any) {
 
                     appMetadata={
                       {
-                        logoUrl: "https://gpgpuwallet.vercel.app/logo-gpgpu.png",
+                        logoUrl: "https://gpgpu-wallet.vercel.app/logo-gpgpu.png",
                         name: "Next App",
-                        url: "https://gpgpuwallet.vercel.app",
+                        url: "https://gpgpu-wallet.vercel.app",
                         description: "This is a Next App.",
   
                       }
